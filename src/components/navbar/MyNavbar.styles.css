@@ -1,0 +1,31 @@
+.navbar__logo {
+  height: 40px;
+  width: 40px;
+}
+
+.nav-theme {
+  background-color: #101018f8 !important;
+  font-size: 18px !important;
+}
+
+.animate-navbar {
+  box-shadow: 1px 1px 1px #222;
+  animation: moveDown 0.5s ease-in-out;
+}
+
+.nav-theme img {
+  width: 28px;
+  height: 28px;
+  margin-top: 2px;
+  vertical-align: top !important;
+  margin-right: 10px;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}

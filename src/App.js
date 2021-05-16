@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Title } from "./components/title-message/Title.component";
+import { MyCarousal } from "./components/myCarousal/MyCarousal.component";
+import { MyNavbar } from "./components/navbar/MyNavbar.component";
+import { About } from "./pages/about/About.component";
+import { Parallax } from "react-parallax";
+import Fade from "react-reveal/Fade";
+import Container from "react-bootstrap/Container";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="App" style={{ position: "relative" }}>
+      <MyCarousal />
+      <Title />
+      <MyNavbar />
+      <div>
+        <Parallax
+          blur={{ min: -30, max: 30 }}
+          bgImage="./assets/images/parallex/background.webp"
+          bgImageAlt=""
+          strength={-200}
         >
-          Learn React
-        </a>
-      </header>
+          <div>
+            <Container className="container-box rounded">
+              <Fade duration={500}>
+                <About />
+              </Fade>
+            </Container>
+          </div>
+        </Parallax>
+      </div>
     </div>
   );
 }
