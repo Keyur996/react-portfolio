@@ -1,0 +1,15 @@
+/* .education__cards {
+} */
+
+.card:hover {
+  box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+@media screen and (max-width: 768px) {
+  .education__card {
+    width: 100% !important;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 20px;
+  }
+}

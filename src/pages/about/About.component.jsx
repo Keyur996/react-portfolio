@@ -14,9 +14,9 @@ export const About = () => {
         <Container>
           <Row className="pt-3 pb-5 align-items-center">
             <Col xs={12} md={6}>
-              <Row className="justify-content-center m-auto">
+              <Row className="m-auto">
                 <Image
-                  className="profile justify-content-end"
+                  className="justify-content-end"
                   alt="profile"
                   src={Profile}
                   thumbnail

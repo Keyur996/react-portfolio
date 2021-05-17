@@ -3,18 +3,14 @@
   font-size: 1.1em;
 }
 
-.profile {
-  max-width: 18em;
-}
-
 .my-details {
   background-color: rgba(255, 255, 255, 0.747);
 }
 
 .about__text {
   text-align: justify;
-  margin: auto;
-  padding: 2rem;
+  padding: 0.5rem;
+  background-color: inherit;
 }
 
 .about__text > h4 {

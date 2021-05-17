@@ -16,6 +16,10 @@ hr {
   z-index: 9;
 }
 
+.about__bg {
+  background-color: #f4f0f0;
+}
+
 .particles-box {
   position: absolute;
   top: 0;

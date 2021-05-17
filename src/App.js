@@ -6,6 +6,7 @@ import { About } from "./pages/about/About.component";
 import { Parallax } from "react-parallax";
 import Fade from "react-reveal/Fade";
 import Container from "react-bootstrap/Container";
+import { Education } from "./pages/eduction/Education.component";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <MyCarousal />
       <Title />
       <MyNavbar />
-      <div>
+      <div className="about__bg">
         <Parallax
           blur={{ min: -30, max: 30 }}
           bgImage="./assets/images/parallex/background.webp"
@@ -29,6 +30,9 @@ function App() {
           </div>
         </Parallax>
       </div>
+      <Container className="mb-3">
+        <Education />
+      </Container>
     </div>
   );
 }
